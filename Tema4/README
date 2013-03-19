@@ -1,0 +1,22 @@
+Anghel Andrei 325CB:
+
+1)Implementare:
+	-cred ca ar fi fost mai bine inteles enuntul daca implementarile ar fi fost nested in sensul:
+		+clasele ce ar implementa: class MyHashMapImpl {
+								   		class Bucket {
+								   			 class Entry {
+								   			 }
+								   		}
+								   }
+   	-in constructor, cand am alocat pt vectorul de bucket, am alocat si pt fiecare bucket in parte, pt a scapa de verificari in metode;
+   	-metode: get: parcurg lista de Entry si verific;
+   			 put: parcurg, verific daca exista perechea (actualizez val, in acest caz), alfel adaug noul Entry;
+   			 remove: parcurg, verific daca exista, daca da ii retin valoarea si indicele din lista; daca valoarea exista, elimin Entry 
+   			 		de la indicele respectiv si intorc valoarea salvata;
+   			 size: intoarce bucketSize;
+   			 getBuckets: parcurg vectorul de buckets si adaug fiecare bucket intr-o lista; 	
+
+2)Analiza:
+	-seamana mult cu laboratorul 7;
+	-din cate am observat, pt acesari la 1000, 2000 si 5000, diferenta intre Student si LazyStudent: 
+						timpul la LazyS creste exponential;

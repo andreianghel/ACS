@@ -1,0 +1,4 @@
+andrei 1 2 3 4
+ana 1 2 3
+ionel 4 5 67
+gigi 1 6 8

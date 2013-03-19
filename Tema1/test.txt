@@ -1,0 +1,75 @@
+   public Integer[] OR(String a, String b)
+    {
+    	if(this.search(a) == null & this.search(b) == null) return null;
+    	if(this.search(a) == null) return this.search(b);
+    	if(this.search(b) == null) return this.search(a);
+    	
+    	
+    	int i = 0, j = 0, la = 0, lb = 0, c = 0;
+    	
+    	la = this.search(a).length-1;
+    	lb = this.search(b).length-1;
+    	Integer[] rezultat = new Integer[la+lb+2];
+    	
+    	
+    	while(i <= la || j <= lb)
+    	{
+    		if(search(a)[i] == null)
+    			if(search(b)[j] != null) 
+    			{
+    				rezultat[c] = this.search(b)[j];
+    				c++;
+    				j++;
+    				continue;
+    			}
+    		else //si b e null
+    			break;
+    		if(search(b)[j] == null)
+    			if(search(a)[i] != null)
+    			{
+    				rezultat[c] = this.search(a)[i];
+    				c++;
+    				i++;
+    				continue;
+    			}
+    		else break;
+    				
+    		if(i == la+1)
+    		{
+    			rezultat[c] = this.search(b)[j];
+    			c++;
+    			j++;
+    			continue;
+    		}
+    		if(j == lb+1)
+    		{
+    			rezultat[c] = this.search(a)[i];
+    			c++;
+    			i++;
+    			continue;
+    		}
+    		if(this.search(a)[i] == this.search(b)[j])
+    		{
+    			rezultat[c] = this.search(a)[i];
+    			c++;
+    			i++;
+    			j++;
+    			continue;
+    		}
+    		if(this.search(a)[i] < this.search(b)[j])
+    		{
+    			rezultat[c] = this.search(a)[i];
+    			c++;
+    			i++;
+    			continue;
+    		}
+    		if(this.search(a)[i] > this.search(b)[j])
+    		{
+    			rezultat[c] = this.search(b)[j];
+    			c++;
+    			j++;
+    			continue;
+    		}
+    	}
+    	return rezultat;	
+    }

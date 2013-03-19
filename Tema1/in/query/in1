@@ -1,0 +1,9 @@
+apple
+(apple and strawberry)
+((pineapple and cherry) and strawberry)
+(apple or cherry)
+(apple and (pineapple or cherry))
+banana
+(apple and banana)
+(apple or banana)
+exit

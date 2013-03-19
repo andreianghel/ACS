@@ -1,0 +1,24 @@
+===Scurta descriere===
+Asa cum este precizat si in cerinta, testerul acorda pana la 80 de puncte.
+Aveti 8 teste, a cate 10 puncte fiecare. Primele 6 teste verifica functionalitatea
+programului fara a tine cont de eficienta. Ultimele 2 teste sunt teste de performanta,
+iar trecerea lor este conditionata de limite de timp (gasiti limitele in checker).
+In folderul in/ se gasesc cele 8 teste publice. Exista un director pentru cele 8
+dictionare si un director pentru fisierele din care se iau interogarile.
+In folderul res/ sunt rezultatele pentru cele 8 teste. Dupa cum a fost mentionat
+ordinea indicilor nu este importanta (1 2 3 este tot una cu 2 3 1). CompareOutputs.class
+va compara outputul intors de programul vostru cu rezultatul corespunzator din directorul
+res. Nu se va tine cont de spatierea elementelor. In eventualitatea in care fisierul .class
+nu functioneaza, aveti si codul sursa pentru CompareOutputs pe care il puteti compila.
+(comanda fiind: javac CompareOutputs.java)
+
+===Instructiuni utilizare===
+Script-ul pe care trebuie sa il rulati este checker.sh. Acesta, precum si restul
+continutului testerului (Makefile, CompareOutputs.class, directoarele in/, res/) trebuie
+sa se afle in acelasi director in care se gaseste si un director src/ ce va contine sursele
+pentru programul vostru. In cazul in care ati folosit pachete modificati corespunzator in
+Makefile si checker (classpath) pentru a avea calea relativa catre clasa Main. Mentionati
+acest lucru in README-ul temei.
+In urma rularii lui checker.sh veti vedea rezultatele fiecarui test precum si punctajul
+acumulat.
+Pentru orice fel de probleme sau nelamuriri, intrebati pe forum.

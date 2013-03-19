@@ -1,0 +1,43 @@
+Element identify(String c)
+{
+	Element aux = new Element();
+	if(!c->has_ceva)
+	{
+		aux.date = new Integer[dict.search(c).date.length];
+		aux.date = dict.search(c).date;
+	}
+	else 
+		aux.date = new Integer[1000]; //aici dimensiunea????
+	ELement[cat o fi].cheie = c;
+	
+	return Element
+} // tre sa apelez identify pt ambii membrii
+
+
+Element AND(Element a, Element b)
+{
+
+}
+
+Integer[] Functie(Dictionar d, String s)
+{
+	Integer[] rezultat;
+	//if(!s.contains("(") || !s.contains(")")) break;	// conditie de oprire
+	
+	// membru stang, operator, membru drept: trebuie identificati
+	(a OP b)
+	prelucrare a: daca a contine nu e primitiva, recursiv in a
+	if(!a.contains("(") & !a.contains(")")) 
+	{
+		if(!dict.contains(a)) a.date este null 
+		if(dict.contains(a)) a.date = search.lista(a);
+	}
+	else recursiv pt a; -> un INT[] pe care sa efectuez OP
+	if(!b.contains("(") & !b.contains(")")) 
+	{
+		if(!dict.contains(b)) b.date este null 
+		if(dict.contains(b)) b.date = search.lista(b);
+	}
+	else recursiv pt b;
+	
+}
